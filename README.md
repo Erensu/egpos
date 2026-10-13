@@ -1,56 +1,56 @@
 # egpos
-excellent ins/gnss/multi-sensors fusion positioning
+Excellent INS/GNSS/multi-sensor fusion positioning
 
-# 简介
-egpos是高精度INS/GNSS融合定位算法库，适用于车载定位、智能手机定位、无人机导航以及自动驾驶等应用场景，融合惯性传感器、卫星观测数据、里程计等多源信息进行高精度定位解算，其主要特点包括有：
+# Introduction
+egpos is a high-precision INS/GNSS fusion positioning algorithm library for vehicle positioning, smartphone positioning, drone navigation, and autonomous driving applications. It fuses inertial sensors, satellite observations, odometry, and other multi-source information to achieve high-precision positioning solutions. Its main features include:
 
 GNSS positioning:
-1. 支持北斗/GPS/GLONASS/GALILEO/QZSS卫星导航定位系统全频点；
-2. SPP、PPP、RTD、RTK抗差最小二乘估计；
-3. SPP、PPP、RTD、RTK稳健卡尔曼滤波器：序贯粗差探测、钟差与钟漂跳变探测及修复、滤波模型验证与修复、滤波系统故障检测与修复；
-4. 自适应卫星观测随机误差模型；
-5. 自适应卡尔曼滤波器系统噪声估计；
-6. 运动状态判别：静止滤波器、直行/转弯状态调整；
-7. 可靠且快速模糊度搜索及固定策略；
-8. 卫星观测数据质量统计和监测；
-9. 定位自主完好性监测算法，包括定位质量监测和控制；
-10. 并联多级融合反馈式定位框架；
-11. RTS/前后向滤波融合平滑定位解算；
+1. Full-frequency support for Beidou/GPS/GLONASS/GALILEO/QZSS navigation satellite systems;
+2. SPP, PPP, RTD, and RTK robust least-squares estimation;
+3. SPP, PPP, RTD, and RTK robust Kalman filters: sequential outlier detection, clock bias and clock drift jump detection and repair, filter model validation and repair, and filter system fault detection and repair;
+4. Adaptive stochastic error model for satellite observations;
+5. Adaptive Kalman filter system noise estimation;
+6. Motion state discrimination: static filter, straight-driving/turning state adjustment;
+7. Reliable and fast ambiguity search and fixing strategies;
+8. Satellite observation quality statistics and monitoring;
+9. Autonomous integrity monitoring algorithms for positioning, including positioning quality monitoring and control;
+10. Parallel multi-stage fusion feedback positioning framework;
+11. RTS forward/backward filtering fusion smoothing positioning solution;
 
-INS/GNSS positionging:
-1. INS/GNSS松耦合算法;
-2. INS/GNSS紧耦合算法：SPP、PPP、RTD、RTK紧耦合算法；
-3. INS/GNSS稳健卡尔曼滤波器：粗差探测、滤波模型验证与修复、滤波系统故障检测与修复；
-4. NHC、ZUPT、ZARU等运动约束；
-5. 车载里程计辅助；
-6. GNSS双天线航向辅助；
-7. INS前向/后向机械编排；
-8. 动对准初始化；
-9. 运动状态判别：静止滤波器；
-10. RTS/前后向滤波融合平滑定位解算；
-11. 定位自主完好性监测算法，包括定位质量监测和控制；
-12. 自适应GNSS、INS/GNSS解算模式切换；
-13. 基于SE_2(3)李群李代数INS机械编排、INS/GNSS松组合算法；
-14. 基于SE_2(3)李群李代数INS/GNSS紧耦合算法：SPP、PPP、RTD、RTK紧耦合算法；
-15. 基于SE_2(3)李群李代数INS/GNSS不变卡尔曼滤波算法；
-16. 欧拉角、旋转向量参数化INS/GNSS松紧组合算法；
-17. 实时姿态/位置/速度平滑器；
-18. INS/GNSS迭代卡尔曼滤波器；
-19. INS/GNSS静止滤波器；
-20. INS/GNSS组合姿态/速度/位置移动平滑滤波；
+INS/GNSS positioning:
+1. INS/GNSS loose-coupling algorithm;
+2. INS/GNSS tight-coupling algorithm: SPP, PPP, RTD, and RTK tight-coupling algorithms;
+3. INS/GNSS robust Kalman filter: outlier detection, filter model validation and repair, and filter system fault detection and repair;
+4. Motion constraints such as NHC, ZUPT, and ZARU;
+5. Vehicle odometer assistance;
+6. Dual-antenna GNSS heading assistance;
+7. Forward/backward INS mechanization;
+8. Dynamic alignment initialization;
+9. Motion state discrimination: static filter;
+10. RTS forward/backward filtering fusion smoothing positioning solution;
+11. Autonomous integrity monitoring algorithms for positioning, including positioning quality monitoring and control;
+12. Adaptive GNSS and INS/GNSS mode switching;
+13. SE_2(3) Lie group and Lie algebra based INS mechanization and INS/GNSS loose-coupled algorithm;
+14. SE_2(3) Lie group and Lie algebra based INS/GNSS tight-coupling algorithm: SPP, PPP, RTD, and RTK tight-coupling algorithms;
+15. SE_2(3) Lie group and Lie algebra based INS/GNSS invariant Kalman filter algorithm;
+16. Euler angle and rotation vector parameterized INS/GNSS loose/tight integration algorithms;
+17. Real-time attitude/position/velocity smoother;
+18. INS/GNSS iterative Kalman filter;
+19. INS/GNSS static filter;
+20. INS/GNSS combined attitude/velocity/position moving smoothing filter;
 
-# 参考
+# References
 [1] http://www.rtklib.com
 
 [2] http://www.rtcm.org
 
 [3] http://software.rtcm-ntrip.org
 
-# 联系
+# Contact
 
-QQ  ：1971129844，苏景岚
+QQ: 1971129844, Su Jinglan
 
-Email：1971129844@qq.com
+Email: 1971129844@qq.com
 
-# 备注
-若对egpos源码有需求可咨询作者
+# Note
+If you need the egpos source code, please contact the author.
